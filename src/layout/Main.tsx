@@ -1,7 +1,7 @@
 const MainLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div>
-      <div>header</div>
+    <div style={{ width: '100dvw', overflowY: 'auto', overflowX: 'hidden', height: '100dvh' }}>
+      {/* <div style={{ width: '100%' }}>header</div> */}
       {children}
     </div>
   );
