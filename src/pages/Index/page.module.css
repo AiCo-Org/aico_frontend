@@ -1,7 +1,12 @@
 /* IndexPage 전체 래퍼 */
-.indexPageWrap {
+.indexPage {
   width: 100%;
   background: #09090B;
+  color: white;
+}
+
+.indexPageWrap {
+  width: 100%;
   color: white;
   display: flex;
   flex-direction: column;
@@ -211,7 +216,7 @@
   gap: 24px;
   padding-right: 24px;
   height: 100%;
-  animation: scroll-left 20s linear infinite;
+  animation: scroll-left 30s linear infinite;
 }
 .section5Card {
   display: flex;
@@ -298,6 +303,30 @@
 .section6ButtonIcon {
   width: 72px;
   height: auto;
+}
+.section6ButtonDesc {
+  font-size: 25px;
+  font-weight: 500;
+  color: #BDBDBD;
+  margin: 0;
+  text-align: center;
+}
+
+/* Section 7 */
+.section7 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  padding-bottom: 64px;
+  box-sizing: border-box;
+} 
+.section7Text {
+  font-size: 20px;
+  font-weight: 500;
+  color: #BDBDBD;
+  margin: 0;
+  text-align: center;
 }
 
 /* 반응형 미디어 쿼리 */
@@ -480,6 +509,16 @@
     gap: 20px;
   }
   .section6Title1 {
+    font-size: 11px;
+  }
+  .section6ButtonDesc {
+    font-size: 11px;
+  }
+  .section7 {
+    flex-direction: column;
+    gap: 4px;
+  }
+  .section7Text {
     font-size: 11px;
   }
 } 
