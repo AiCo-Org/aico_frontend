@@ -1,20 +1,22 @@
-import AI1PNG from '@assets/ai/ai_1.png';
-import AI2PNG from '@assets/ai/ai_2.png';
-import AI3PNG from '@assets/ai/ai_3.png';
-import AI4PNG from '@assets/ai/ai_4.png';
-import AI5PNG from '@assets/ai/ai_5.png';
-import AI6PNG from '@assets/ai/ai_6.png';
-import AI7PNG from '@assets/ai/ai_7.png';
 import ChevronRightSVG from '@assets/icons/chevron-right.svg?react';
 import QuoteClose from '@assets/icons/quote_close.svg?react';
 import QuoteOpen from '@assets/icons/quote_open.svg?react';
-import Reviewer1PNG from '@assets/reviewer/reviewer_1.png';
-import Reviewer2PNG from '@assets/reviewer/reviewer_2.png';
-import Reviewer3PNG from '@assets/reviewer/reviewer_3.png';
-import Reviewer4PNG from '@assets/reviewer/reviewer_4.png';
-import Reviewer5PNG from '@assets/reviewer/reviewer_5.png';
-import Reviewer6PNG from '@assets/reviewer/reviewer_6.png';
-import IndexVido from '@assets/videos/아이코 플랫폼.mp4';
+import AI1PNG from '@assets/landing/ai/ai_1.png';
+import AI2PNG from '@assets/landing/ai/ai_2.png';
+import AI3PNG from '@assets/landing/ai/ai_3.png';
+import AI4PNG from '@assets/landing/ai/ai_4.png';
+import AI5PNG from '@assets/landing/ai/ai_5.png';
+import AI6PNG from '@assets/landing/ai/ai_6.png';
+import AI7PNG from '@assets/landing/ai/ai_7.png';
+import Image1PNG from '@assets/landing/images/image_1.png';
+import Image2PNG from '@assets/landing/images/image_2.png';
+import Reviewer1PNG from '@assets/landing/reviewer/reviewer_1.png';
+import Reviewer2PNG from '@assets/landing/reviewer/reviewer_2.png';
+import Reviewer3PNG from '@assets/landing/reviewer/reviewer_3.png';
+import Reviewer4PNG from '@assets/landing/reviewer/reviewer_4.png';
+import Reviewer5PNG from '@assets/landing/reviewer/reviewer_5.png';
+import Reviewer6PNG from '@assets/landing/reviewer/reviewer_6.png';
+import IndexVido from '@assets/landing/video.mp4';
 import styles from './page.module.css';
 
 const IndexPageComponent1 = () => {
@@ -41,7 +43,16 @@ const IndexPageComponent1 = () => {
 };
 
 const IndexPageComponent2 = () => {
-  const images = Array.from({ length: 3 }, () => 'https://upload.wikimedia.org/wikipedia/commons/5/59/Empty.png');
+  const images = [
+    {
+      img: Image1PNG,
+      alt: 'The best team members collaborate on their own',
+    },
+    {
+      img: Image2PNG,
+      alt: 'Check out the deliverables immediately and communicate in chat!',
+    },
+  ];
   return (
     <div className={styles.section2}>
       <p className={styles.section2Title}>
@@ -52,7 +63,8 @@ const IndexPageComponent2 = () => {
       <div className={styles.section2Grid}>
         {images.map((e, i) => (
           <div className={styles.section2Card} key={i}>
-            <img src={e} className={styles.section2Img} />
+            <img src={e.img} className={styles.section2Img} />
+            <p className={styles.section2ImgDesc}>{e.alt}</p>
           </div>
         ))}
       </div>
