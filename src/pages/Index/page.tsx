@@ -79,11 +79,7 @@ const IndexPageComponent2 = () => {
 const IndexPageComponent3 = () => {
   return (
     <div className={styles.section3}>
-      <p className={styles.section3Title}>
-        Expensive outsourcing? Complex AI tools?
-        <br />
-        Now, just Ai-Co
-      </p>
+      <p className={styles.section3Title}>With Ai-Co, Anyone can be CEO</p>
       <video muted autoPlay loop className={styles.section3Video}>
         <source src={IndexVido} type="video/mp4" />
       </video>
@@ -169,16 +165,14 @@ const IndexPageComponent6 = () => {
       <div className={styles.section6TitleWrap}>
         <p className={styles.section6Title1}>Be the first to join the huge wave that creates the future.</p>
         <p className={styles.section6Title2}>Change the world with Ai-Co</p>
+        <p className={styles.section6ButtonDesc}>
+          If you pre-register, you can use it first after the product is released
+        </p>
       </div>
       <button className={styles.section6Button} onClick={handleClickPreRegistration}>
         Sign Up for Pre-Registration
         <ChevronRightSVG className={styles.section6ButtonIcon} />
       </button>
-      <p className={styles.section6ButtonDesc}>
-        If you pre-register, you can use it first
-        <br />
-        after the product is released
-      </p>
     </div>
   );
 };
